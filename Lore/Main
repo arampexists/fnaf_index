@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-</html>
-
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.2/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.2/semantic.min.css">
   <style>
-    /* Custom CSS for a centered and larger button */
+    /* Custom CSS for a centered and visually appealing button */
+    body {
+      background-color: #3498db; /* Nice blue background color */
+      margin: 0; /* Remove margin */
+      padding: 0; /* Remove padding */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
     .custom-button {
       background-color: #d2b48c; /* Light brownish tan color */
       color: #ffffff; /* Text color */
-      padding: 20px 40px; /* Increase padding for a larger button */
-      font-size: 20px; /* Increase font size for a larger button */
+      padding: 20px 40px; /* Increased padding for a larger button */
+      font-size: 24px; /* Increased font size for a larger button */
       border: none; /* Remove the border to make it rectangular */
       cursor: pointer; /* Change the cursor on hover */
       text-decoration: none; /* Remove the underline for links */
-      display: block; /* Make the button a block element to center it horizontally */
-      margin: 0 auto; /* Center the button horizontally */
+      border-radius: 25px; /* Apply border-radius for a more rounded button */
     }
   </style>
 </head>
 <body>
-
-<a href="https://www.example.com" class="ui custom-button button">Click Me</a>
+  <a href="https://www.example.com" class="ui custom-button button">Click Me</a>
+</body>
+</html>
