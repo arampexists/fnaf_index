@@ -7,13 +7,22 @@
 
 <h1>My First Heading</h1>
 <p>My first paragraph.</p>
-
-</body>
-</html>
 <style>
-body {
-  background-image: url('https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/games/switch/f/five-nights-at-freddys-switch/hero');
-  background-repeat: no-repeat;
-}
-</style>
- 
+    /* This CSS code will make the image fit the screen width and height */
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <img src="your-image.jpg" alt="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/games/switch/f/five-nights-at-freddys-switch/hero">
+</body>
