@@ -4,7 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
+  <!-- Custom CSS for creepy styling and positioning -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
+        .header {
+            position: fixed;
+            top: 20px; /* Adjust the value to control the vertical position */
+            left: 0;
+            right: 0;
+            background: transparent;
+            color: #ff5722; /* Spooky orange color */
+            text-align: center;
+            font-family: 'Creepster', cursive;
+            font-size: 4em;
+            text-transform: uppercase;
+            text-shadow: 4px 4px 3px #000, 4px 4px 4px #ff5722;
+        }
+    </style>
+
+    <!-- Google Fonts for the "Creepster" font -->
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="app">
+    <div class="header">
+        FNAF Index
+    </div>
     <!-- Semantic UI CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
 
