@@ -1,32 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.2/semantic.min.css">
-  <style>
-    /* Custom CSS for a centered and visually appealing button */
-    body {
-      background-color: #3498db; /* Nice blue background color */
-      margin: 0; /* Remove margin */
-      padding: 0; /* Remove padding */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
 
-    .custom-button {
-      background-color: #d2b48c; /* Light brownish tan color */
-      color: #ffffff; /* Text color */
-      padding: 20px 40px; /* Increased padding for a larger button */
-      font-size: 24px; /* Increased font size for a larger button */
-      border: none; /* Remove the border to make it rectangular */
-      cursor: pointer; /* Change the cursor on hover */
-      text-decoration: none; /* Remove the underline for links */
-      border-radius: 25px; /* Apply border-radius for a more rounded button */
-    }
-  </style>
+    <!-- Semantic UI CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
+    <!-- Element UI CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui@2.15.6/lib/theme-chalk/index.css">
+    
+    <!-- Custom CSS for styling -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .button-container {
+            display: flex;
+        }
+
+        .glowing-button {
+            margin: 10px;
+            transition: box-shadow 0.3s;
+        }
+
+        .glowing-button:hover {
+            box-shadow: 0 0 10px rgba(0, 128, 255, 0.5);
+        }
+    </style>
 </head>
 <body>
-  <a href="https://www.example.com" class="ui custom-button button">Click Me</a>
+
+<div id="app">
+    <div class="button-container">
+        <a href="page1.html" class="ui primary button glowing-button">Button 1</a>
+        <a href="page2.html" class="ui primary button glowing-button">Button 2</a>
+        <a href="page3.html" class="ui primary button glowing-button">Button 3</a>
+    </div>
+</div>
+
+<!-- Semantic UI JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+<!-- Element UI JS -->
+<script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui@2.15.6/lib/index.js"></script>
+
 </body>
 </html>
